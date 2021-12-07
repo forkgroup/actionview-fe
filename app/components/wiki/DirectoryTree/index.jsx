@@ -118,7 +118,7 @@ export default class Tree extends Component {
       Toggle: (props) => {
         return (
           <span style={ props.style.base } onClick={ () => { this.toggleClick(props) } }>
-            { props.node.toggled ?
+            { props.node ?
             <i className='fa fa-caret-down'></i>
             :
             <i className='fa fa-caret-right'></i> }
